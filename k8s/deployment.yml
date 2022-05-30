@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy-node-app
+  labels:
+    app: meu-node-app
+spec:
+  replicas: 3
+  template:
+    metadata:
+     name: pod-node-app
+     labels:
+       app: pod-node-app
+    spec:
+      containers:
+        - name: container-node-app
+          image: dionatas/node-project:{{tag}}
+          ports:
+            - containerPort: 8889     
+  selector:
+    matchLabels:
+      app: pod-node-app

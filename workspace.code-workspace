@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../day-2/views"
+		},
+		{
+			"path": "../day-2/teste"
+		},
+		{
+			"path": "../day-2/routes"
+		},
+		{
+			"path": "../day-2/public"
+		},
+		{
+			"path": "../day-2/k8s"
+		},
+		{
+			"path": "../day-2/bin"
+		}
+	],
+	"settings": {}
+}
